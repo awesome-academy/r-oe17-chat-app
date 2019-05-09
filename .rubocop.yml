@@ -256,7 +256,7 @@ Style/HashSyntax:
     - hash_rockets
 
 # Checks the indentation of the first key in a hash literal.
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   # The value `special_inside_parentheses` means that hash literals with braces
   # that have their opening brace on the same line as a surrounding opening
   # round parenthesis, shall have their first key indented relative to the
