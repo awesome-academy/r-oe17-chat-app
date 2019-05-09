@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
     registrations: "users/registrations"
   }
+
+  post "message", to: "messages#create"
+
+  mount ActionCable.server, at: "/cable"
 end
