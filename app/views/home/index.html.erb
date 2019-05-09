@@ -1,0 +1,36 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <%= render "side_content" %>
+</ul>
+<div id="content-wrapper" class="d-flex flex-column">
+  <div id="content">
+    <%= render "navbar" %>
+    <div class="container-fluid">
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800"><%= t(".h1_name_group") %></h1>
+      </div>
+      <div class="chat-content">
+        <section id="timeline" class="chat-window">
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+          <%= render "chat" %>
+        </section>
+        <section class="chat-form">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Type something..." aria-label="Type something..." aria-describedby="button-addon2"/>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                <%= t(".btn_enter_mess") %>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
