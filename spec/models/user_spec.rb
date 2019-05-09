@@ -9,6 +9,7 @@ RSpec.describe User, type: :model do
     it{is_expected.to have_db_column(:title).of_type(:string)}
 
     it{expect(build(:user)).to be_valid}
+    byebug
     it{expect(create(:user)).to be_valid}
   end
 

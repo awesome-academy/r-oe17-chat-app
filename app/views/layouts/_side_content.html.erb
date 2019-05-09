@@ -10,27 +10,19 @@
 <hr class="sidebar-divider my-0"/>
 <!-- Nav Item - Dashboard -->
 <li class="nav-item active">
-  <a class="nav-link" href="index.html">
+  <div class="nav-link">
     <i class="fas fa-fw fa-tachometer-alt"></i>
-    <span><%= t(".sp_allchat") %></span></a >
+    <span><%= t(".sp_allchat") %></span>
+  </div >
 </li>
 <hr class="sidebar-divider"/>
 <div class="sidebar-heading">
   <%= t(".group_chat.title") %>
 </div>
-<li class="nav-item">
-  <a class="nav-link" href="#">
-    <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" alt="avartar" class="img-profile rounded-circle"/>
-    <span><%= t(".group_chat.span_group_name") %></span>
-  </a>
-</li>
+<% current_user.groups.each do |g| %>
+  <%= render partial: "groups/group", locals: {group: g} %>
+<% end %>
 <hr class="sidebar-divider"/>
 <div class="sidebar-heading">
   <%= t(".private_chat.title") %>
 </div>
-<li class="nav-item">
-  <a href="#" class="nav-link">
-    <img src="https://source.unsplash.com/QAB-WJcbgJk/60x60" alt="avartar" class="img-profile rounded-circle"/>
-    <span><%= t(".private_chat.span_user_name") %></span>
-  </a>
-</li>
