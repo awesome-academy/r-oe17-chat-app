@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= t(".title") %></title>
+    <title>ROe17ChatApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-  <body id="page-top">
-    <%= render partial: "layouts/flash", locals:{flash: flash} %>
-    <div id="wrapper">
-      <%= yield %>
+  <body class="bg-gradient-primary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
