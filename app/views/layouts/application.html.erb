@@ -6,11 +6,22 @@
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+    <meta id="<%= current_user.id %>" name="current-user"/>
   </head>
   <body id="page-top">
     <%= render partial: "layouts/flash", locals:{flash: flash} %>
     <div id="wrapper">
-      <%= yield %>
+      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <%= render "layouts/side_content"%>
+      </ul>
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <%= render "layouts/navbar" %>
+          <div class="container-fluid">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

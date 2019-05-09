@@ -1,15 +1,7 @@
 en:
   layouts:
-    navbar:
-      h5_title: Mess Mess
-      drop_btn_profile: My Profile
-      a_logout: Logout
     application:
       title: Mess Me
-  home:
-    index:
-      h1_name_group: Group 1
-      btn_enter_mess: Enter
     side_content:
       brand_text: Mess Mess
       sup: Me
@@ -34,3 +26,15 @@ en:
         contact: Emily Fowler · 58m
     chat:
       message_content: Hello There
+  home:
+    index:
+      h1_name_group: Group 1
+      btn_enter_mess: Enter
+  groups:
+    show:
+      btn_enter_mess: Enter
+    set_group:
+      flash_danger: Group Invalid
+  messages:
+    messages:
+      show_more: Show More

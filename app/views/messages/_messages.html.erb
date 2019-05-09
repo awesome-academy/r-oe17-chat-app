@@ -1,0 +1,8 @@
+<% if messages.present? %>
+  <div class="show-more">
+    <a id="js-room-show-more" class="badge badge-primary" data-timestamp="<%= messages.first.created_at.utc.iso8601 %>" href="#">
+      <%= t(".show_more") %>
+    </a>
+  </div>
+<% end %>
+<%= render messages%>
