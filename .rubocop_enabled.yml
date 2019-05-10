@@ -189,10 +189,6 @@ Naming/FileName:
   Description: "Use snake_case for source file names."
   Enabled: true
 
-Style/FlipFlop:
-  Description: "Checks for flip flops"
-  Enabled: true
-
 Style/For:
   Description: "Checks use of for or each in multiline loops."
   Enabled: true
@@ -233,13 +229,13 @@ Layout/IndentationWidth:
   Description: "Use 2 spaces for indentation."
   Enabled: true
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   Description: >-
     Checks the indentation of the first element in an array
     literal.
   Enabled: true
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   Description: "Checks the indentation of the first key in a hash literal."
   Enabled: true
 

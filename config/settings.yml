@@ -1,0 +1,8 @@
+models:
+  group:
+    name_length: 50
+  user:
+    name_length: 50
+    mobile_length: 30
+  message:
+    body_length: 500

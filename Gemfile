@@ -16,7 +16,7 @@ gem "webpacker", "~> 4.0"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem "jbuilder", "~> 2.5"
+gem "jbuilder", github: "rails/jbuilder", branch: "master"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -28,9 +28,21 @@ gem "jbuilder", "~> 2.5"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.2", require: false
 
+gem "devise", "~> 4.6", ">= 4.6.2"
+gem "faker", "~> 1.9", ">= 1.9.3"
+gem "config", "~> 1.7", ">= 1.7.1"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "rspec-rails", "~> 3.8", ">= 3.8.2"
+end
+
+group :test do
+  gem "capybara", "~> 3.18"
+  gem "shoulda-matchers", "~> 4.0", ">= 4.0.1"
+  gem "factory_bot", "~> 5.0", ">= 5.0.2"
+  gem "database_cleaner", "~> 1.7"
 end
 
 group :development do
