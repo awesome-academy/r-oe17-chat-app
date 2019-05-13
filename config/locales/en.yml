@@ -30,4 +30,38 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    navbar:
+      h5_title: Mess Mess
+      drop_btn_profile: My Profile
+      a_logout: Logout
+    application:
+      title: Mess Me
+  home:
+    index:
+      h1_name_group: Group 1
+      btn_enter_mess: Enter
+    side_content:
+      brand_text: Mess Mess
+      sup: Me
+      sp_allchat: All Chats
+      group_chat:
+        title: Group Chat
+        span_group_name: Group 1
+      private_chat:
+        title: Private Chat
+        span_user_name: Tony Stank
+    navbar:
+      h6_dropdown_header: Message Center
+      notify_readmore: Read More Messages
+      profile:
+        name: Tony Stank
+        a_profile: Profile
+        a_settings: Settings
+        a_activity_log: Activity Log
+        a_logout: Logout
+      notification:
+        content: Hi there! I am wondering if you can help me with a problem I've been having.
+        contact: Emily Fowler · 58m
+    chat:
+      message_content: Hello There
