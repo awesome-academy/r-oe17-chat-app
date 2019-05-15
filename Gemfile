@@ -43,6 +43,7 @@ group :test do
   gem "shoulda-matchers", "~> 4.0", ">= 4.0.1"
   gem "factory_bot", "~> 5.0", ">= 5.0.2"
   gem "database_cleaner", "~> 1.7"
+  gem "guard-rspec", "~> 4.7", ">= 4.7.3"
 end
 
 group :development do

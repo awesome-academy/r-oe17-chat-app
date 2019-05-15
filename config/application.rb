@@ -36,5 +36,10 @@ module ROe17ChatApp
       "**",
       "*.{rb,yml}").to_s
     ]
+
+    config.to_prepare do
+      Devise::SessionsController.layout "authentication"
+      Devise::RegistrationsController.layout "authentication"
+    end
   end
 end
