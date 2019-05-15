@@ -17,3 +17,10 @@ require("channels");
 import "bootstrap";
 import "startbootstrap-sb-admin-2/js/sb-admin-2";
 import "../src/application.scss";
+
+import { scroll_bottom, submit_message } from "./utils";
+
+$(document).on("turbolinks:load", function() {
+  submit_message();
+  scroll_bottom();
+});

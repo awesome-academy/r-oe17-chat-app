@@ -6,3 +6,4 @@ models:
     mobile_length: 30
   message:
     body_length: 500
+    last_messages: 20

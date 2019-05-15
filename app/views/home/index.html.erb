@@ -9,26 +9,17 @@
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800"><%= t(".h1_name_group") %></h1>
       </div>
-      <div class="chat-content">
-        <section id="timeline" class="chat-window">
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-          <%= render "chat" %>
-        </section>
+      <div class="chat-content" id="messages">
+        <div id="timeline" class="chat-window" id="message-container">
+          <%= render @messages %>
+        </div>
         <section class="chat-form">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Type something..." aria-label="Type something..." aria-describedby="button-addon2"/>
+          <%= form_for(@message,html: {class: "input-group mb-3"}, url: message_path, remote: true) do |f|%>
+            <%= f.text_field :body, {class: "form-control", id: "message_body", placeholder: "Type something...", aria:{label: "Type something...", describedby: "button-addon2"}} %>
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                <%= t(".btn_enter_mess") %>
-              </button>
+              <%= f.submit t(".btn_enter_mess"), {class: "btn btn-outline-secondary", id: "button-addon2"}%>
             </div>
-          </div>
+          <% end %>
         </section>
       </div>
     </div>

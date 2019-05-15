@@ -44,6 +44,7 @@ group :test do
   gem "factory_bot", "~> 5.0", ">= 5.0.2"
   gem "database_cleaner", "~> 1.7"
   gem "guard-rspec", "~> 4.7", ">= 4.7.3"
+  gem "rails-controller-testing", "~> 1.0", ">= 1.0.4"
 end
 
 group :development do
