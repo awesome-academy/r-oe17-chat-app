@@ -31,6 +31,8 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "devise", "~> 4.6", ">= 4.6.2"
 gem "faker", "~> 1.9", ">= 1.9.3"
 gem "config", "~> 1.7", ">= 1.7.1"
+gem "gravatar_image_tag", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
