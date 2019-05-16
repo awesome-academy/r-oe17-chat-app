@@ -1,0 +1,23 @@
+<div id="content-wrapper" class="d-flex flex-column">
+  <div id="content">
+    <div class="container-fluid">
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800"><%= @group.name %></h1>
+      </div>
+      <div class="chat-content" id="messages">
+        <div id="timeline" class="chat-window" id="message-container">
+          <%= render "messages/messages", messages: @messages %>
+        </div>
+        <section class="chat-form">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="js-room-new-message" placeholder="Type something..." aria-label="Type something..." aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enter</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
